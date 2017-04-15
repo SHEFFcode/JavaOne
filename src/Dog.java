@@ -16,4 +16,14 @@ public class Dog extends Animal {
         this.teeth = teeth;
         this.coat = coat;
     }
+
+    @Override
+    public void Eat() {
+        this.Chew();
+        super.Eat();
+    }
+
+    public void Chew() {
+        System.out.println(getName() + " is chewing.");
+    }
 }
