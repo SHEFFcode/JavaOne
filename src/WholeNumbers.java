@@ -15,5 +15,7 @@ public class WholeNumbers {
         FloatingPointNumbers.Run();
         //Text
         Text.Run();
+        //Operators
+        Operators.Run();
     }
 }
