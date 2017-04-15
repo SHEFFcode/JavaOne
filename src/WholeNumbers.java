@@ -41,5 +41,9 @@ public class WholeNumbers {
         Account superAccount = new Account("12345", 140.00, "Jeremy Shefer"
                 , "jeremy@sheffmachine.com", "867-5309");
         superAccount.Deposit(100);
+
+        //Inheritance
+        Dog doggie = new Dog("Labbie", 20, 20, 1, 4, 1, 10, "fur");
+        doggie.Eat();
     }
 }
