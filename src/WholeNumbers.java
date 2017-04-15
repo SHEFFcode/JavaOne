@@ -19,5 +19,7 @@ public class WholeNumbers {
         Operators.Run();
         //Keywords and Expresisons
         KeywordsAndExpressions.Run();
+        //Control flow statements
+        ControlFlowStatements.Run();
     }
 }
