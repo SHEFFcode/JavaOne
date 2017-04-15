@@ -14,7 +14,8 @@ public class OOPJava {
         }
     }
     public String getModel() {
-        return this.model;
+        if (!this.model.isEmpty())
+            return this.model;
     }
     private void Run() {
 
