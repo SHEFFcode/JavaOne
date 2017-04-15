@@ -60,7 +60,7 @@ public class Animal {
 
     }
 
-    public void Move() {
+    public void Move(int speed) {
 
     }
 }

@@ -23,6 +23,24 @@ public class Dog extends Animal {
         super.Eat();
     }
 
+    @Override
+    public void Move(int speed) {
+        if (speed > 10) {
+            this.Walk();
+        } else {
+            this.Run();
+        }
+        super.Move(speed);
+    }
+
+    public void Walk() {
+        System.out.println("Running");
+    }
+
+    public void Run() {
+        System.out.println("Walking");
+    }
+
     public void Chew() {
         System.out.println(getName() + " is chewing.");
     }
