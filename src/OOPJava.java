@@ -14,8 +14,10 @@ public class OOPJava {
         }
     }
     public String getModel() {
-        if (!this.model.isEmpty())
+        if (!this.model.isEmpty()) {
             return this.model;
+        }
+        return "No model has been assigned yet";≠
     }
     private void Run() {
 
