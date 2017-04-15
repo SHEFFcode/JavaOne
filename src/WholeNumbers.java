@@ -21,5 +21,11 @@ public class WholeNumbers {
         KeywordsAndExpressions.Run();
         //Control flow statements
         ControlFlowStatements.Run();
+        //Objects
+        OOPJava car = new OOPJava();
+        OOPJava porche = new OOPJava();
+        //porche.model = "Career";//violates encapsulation
+        porche.setModel("Carera");
+        System.out.println(porche.getModel());
     }
 }
