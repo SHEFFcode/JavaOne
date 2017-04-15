@@ -17,5 +17,7 @@ public class WholeNumbers {
         Text.Run();
         //Operators
         Operators.Run();
+        //Keywords and Expresisons
+        KeywordsAndExpressions.Run();
     }
 }
