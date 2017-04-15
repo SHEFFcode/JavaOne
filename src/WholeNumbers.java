@@ -27,5 +27,19 @@ public class WholeNumbers {
         //porche.model = "Career";//violates encapsulation
         porche.setModel("Carera");
         System.out.println(porche.getModel());
+
+        //More classses
+        Account account = new Account();
+        account.Withdrawal(300);
+
+        account.Deposit(200);
+        account.Withdrawal(300);
+
+        account.Deposit(101);
+        account.Withdrawal(300);
+
+        Account superAccount = new Account("12345", 140.00, "Jeremy Shefer"
+                , "jeremy@sheffmachine.com", "867-5309");
+        superAccount.Deposit(100);
     }
 }

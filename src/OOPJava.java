@@ -17,7 +17,7 @@ public class OOPJava {
         if (!this.model.isEmpty()) {
             return this.model;
         }
-        return "No model has been assigned yet";≠
+        return "No model has been assigned yet";
     }
     private void Run() {
 
