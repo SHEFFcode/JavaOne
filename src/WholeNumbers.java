@@ -46,5 +46,8 @@ public class WholeNumbers {
         Dog doggie = new Dog("Labbie", 20, 20, 1, 4, 1, 10, "fur");
         doggie.Eat();
         doggie.Move(20);
+
+        //Composition
+        Composition.Run();
     }
 }
