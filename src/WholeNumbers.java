@@ -1,4 +1,6 @@
 import CompositionExample.*;
+import EncapsulationExample.EncapsulatedPlayer;
+import EncapsulationExample.Player;
 
 public class WholeNumbers {
     public static void main(String[] args) {
@@ -63,5 +65,21 @@ public class WholeNumbers {
         newPC.PowerUp();
         newPC.getMonitors().DrawPixelAt(2, 2, "red");
         newPC.getMotherboard().LoadProgram("Excel");
+
+        //Encapulation Example
+        Player player = new Player();
+        player.name = "Tim";
+        player.health = 20;
+        player.weapon = "Sword";
+
+        int damage = 20;
+        player.health = 200; // Here is the problem, someone can override health inadvertantly.
+        player.LoseHealth(damage);
+        System.out.println("Remaining health is " + player.HealthRemaining());
+
+        EncapsulatedPlayer superPlayer = new EncapsulatedPlayer("Tim", 5000, "Sword");
+        //Can't edit the health field because it is private and only has a getter.
+        superPlayer.LoseHealth(100);
+        System.out.println(superPlayer.getHealth());
     }
 }
