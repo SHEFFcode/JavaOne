@@ -87,19 +87,24 @@ public class WholeNumbers {
         System.out.println(superPlayer.getHealth());
 
         //Polymorphism Example
-        public static Movie randomMovie() {
-            int randomNumber = (int)(Math.random() * 3) + 1;
-            System.out.println("Random number generated was " + randomNumber);
-            switch (randomNumber) {
-                case 1:
-                    return new Jaws();
-                case 2:
-                    return new IndependenceDay();
-                case 3:
-                    return new MazeRunner();
-                default:
-                    return null;
-            }
+        for (int i = 0; i < 11; i++) {
+            System.out.println(randomMovie().Plot());
+        }
+
+    }
+    //Polymorphism Example
+    public static Movie randomMovie() {
+        int randomNumber = (int)(Math.random() * 3) + 1;
+        System.out.println("Random number generated was " + randomNumber);
+        switch (randomNumber) {
+            case 1:
+                return new Jaws();
+            case 2:
+                return new IndependenceDay();
+            case 3:
+                return new MazeRunner();
+            default:
+                return null;
         }
     }
 }

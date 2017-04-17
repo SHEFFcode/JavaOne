@@ -8,8 +8,5 @@ public class MazeRunner extends Movie {
         super("MazeRunner");
     }
 
-    @Override
-    public String Plot() {
-        return "Some guy runs somewhere.";
-    }
+    //No plot method here o_O
 }
