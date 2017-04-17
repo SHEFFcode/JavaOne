@@ -62,5 +62,6 @@ public class WholeNumbers {
         PC newPC = new PC(newCase, newMonitor, newMotherboard);
 
         newPC.getMonitors().DrawPixelAt(2, 2, "red");
+        newPC.getMotherboard().LoadProgram("Excel");
     }
 }
