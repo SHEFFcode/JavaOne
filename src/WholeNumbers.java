@@ -1,3 +1,5 @@
+import CompositionExample.*;
+
 public class WholeNumbers {
     public static void main(String[] args) {
         //width of 32
@@ -49,5 +51,16 @@ public class WholeNumbers {
 
         //Composition
         Composition.Run();
+
+        //CompositionExample
+        Case newCase = new Case("220B", "Dell", "Supower"
+                , new Dimensions(20,20,20));
+        Monitor newMonitor = new Monitor("27 inch beast", "ASUS", 20
+                , new Resolution(20, 20));
+
+        Motherboard newMotherboard = new Motherboard("Super", "ASUS", 2, 2, "2.2");
+        PC newPC = new PC(newCase, newMonitor, newMotherboard);
+
+        newPC.getMonitors().DrawPixelAt(2, 2, "red");
     }
 }
