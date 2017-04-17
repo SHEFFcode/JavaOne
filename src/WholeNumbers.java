@@ -90,7 +90,8 @@ public class WholeNumbers {
         for (int i = 0; i < 11; i++) {
             System.out.println(randomMovie().Plot());
         }
-
+        //Testing static
+        TestingStatic.Run();
     }
     //Polymorphism Example
     public static Movie randomMovie() {
