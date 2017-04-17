@@ -60,7 +60,7 @@ public class WholeNumbers {
 
         Motherboard newMotherboard = new Motherboard("Super", "ASUS", 2, 2, "2.2");
         PC newPC = new PC(newCase, newMonitor, newMotherboard);
-
+        newPC.PowerUp();
         newPC.getMonitors().DrawPixelAt(2, 2, "red");
         newPC.getMotherboard().LoadProgram("Excel");
     }

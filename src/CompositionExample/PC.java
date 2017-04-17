@@ -14,7 +14,17 @@ public class PC {
         this.motherboard = motherboard;
     }
 
-    public Case getTheCase() {
+    public void PowerUp() {
+        this.getTheCase().PressPowerButton();
+        this.drawLogo();
+    }
+
+    private void drawLogo() {
+        System.out.println("Drawing logo...");
+        this.getMonitors().DrawPixelAt(2, 2, "red");
+    }
+
+    private Case getTheCase() {
         return theCase;
     }
 
