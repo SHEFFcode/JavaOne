@@ -1,6 +1,10 @@
 import CompositionExample.*;
 import EncapsulationExample.EncapsulatedPlayer;
 import EncapsulationExample.Player;
+import PolymorphismExample.IndependenceDay;
+import PolymorphismExample.Jaws;
+import PolymorphismExample.MazeRunner;
+import PolymorphismExample.Movie;
 
 public class WholeNumbers {
     public static void main(String[] args) {
@@ -81,5 +85,21 @@ public class WholeNumbers {
         //Can't edit the health field because it is private and only has a getter.
         superPlayer.LoseHealth(100);
         System.out.println(superPlayer.getHealth());
+
+        //Polymorphism Example
+        public static Movie randomMovie() {
+            int randomNumber = (int)(Math.random() * 3) + 1;
+            System.out.println("Random number generated was " + randomNumber);
+            switch (randomNumber) {
+                case 1:
+                    return new Jaws();
+                case 2:
+                    return new IndependenceDay();
+                case 3:
+                    return new MazeRunner();
+                default:
+                    return null;
+            }
+        }
     }
 }
