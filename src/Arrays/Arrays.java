@@ -23,6 +23,15 @@ public class Arrays {
         }
     }
 
+    public double Average(int[] integerArray) {
+        int sum = 0;
+        for (int i = 0; i < integerArray.length; i++) {
+            sum += integerArray[i];
+        }
+
+        return (double) sum / integerArray.length;
+    }
+
     public static void printArray(int[] array) {
         for (int i=0; i < array.length; i++) {
             System.out.println("Element " + i + ", value is " + array[i]);

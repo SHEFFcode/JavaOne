@@ -97,6 +97,7 @@ public class WholeNumbers {
         Arrays array = new Arrays();
         array.Run();
         array.Run(6);
+        System.out.println(array.Average(new int[] {1, 2, 3, 4}));
     }
     //Polymorphism Example
     public static Movie randomMovie() {
