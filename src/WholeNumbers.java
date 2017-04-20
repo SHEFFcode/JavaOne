@@ -1,3 +1,4 @@
+import Arrays.Arrays;
 import CompositionExample.*;
 import EncapsulationExample.EncapsulatedPlayer;
 import EncapsulationExample.Player;
@@ -5,7 +6,6 @@ import PolymorphismExample.IndependenceDay;
 import PolymorphismExample.Jaws;
 import PolymorphismExample.MazeRunner;
 import PolymorphismExample.Movie;
-import Arrays.Arrays;
 
 public class WholeNumbers {
     public static void main(String[] args) {
@@ -98,6 +98,7 @@ public class WholeNumbers {
         array.Run();
         array.Run(6);
         System.out.println(array.Average(new int[] {1, 2, 3, 4}));
+
     }
     //Polymorphism Example
     public static Movie randomMovie() {
