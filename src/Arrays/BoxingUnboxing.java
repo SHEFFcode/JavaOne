@@ -14,8 +14,7 @@ public class BoxingUnboxing {
 
         intArrayLst.add(5);
         intArrayLst.get(0);
+
+        Integer myIntValue = 56; //Java compiler is doing Integer.valueOf(56);
     }
-
-
-
 }
