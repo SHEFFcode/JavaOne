@@ -9,6 +9,8 @@ public class Arrays {
         myIntArray[5] = 50;
         System.out.println(myIntArray[5]);
         printArray(myIntArray);
+
+        ResizeArray(new int[] {1, 2}, 10);
     }
 
     public void Run(int numberOfElements) {
@@ -30,6 +32,17 @@ public class Arrays {
         }
 
         return (double) sum / integerArray.length;
+    }
+
+    private void ResizeArray(int[] originalArray, int newSize) {
+        int[] newArray = new int[newSize];
+
+        for (int i = 0; i < originalArray.length; i++) {
+            newArray[i] = originalArray[i];
+        }
+
+        System.out.println("" + originalArray[0] + newArray[0]);
+
     }
 
     public static void printArray(int[] array) {
