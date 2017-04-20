@@ -25,10 +25,16 @@ public class ArrayLists {
         groceryList.set(0, "Goodbye");
     }
 
+    private String findItem(String searchItem) {
+        boolean exists = groceryList.contains(searchItem);
+        return exists ? "Contains" : "Does not contain";
+    }
+
     public void Run() {
         addGroceryItem("Milk");
         printGroceryList();
         modifyGroceryItem();
         printGroceryList();
+        findItem("Milk");
     }
 }
