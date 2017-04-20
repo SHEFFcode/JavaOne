@@ -5,6 +5,7 @@ import PolymorphismExample.IndependenceDay;
 import PolymorphismExample.Jaws;
 import PolymorphismExample.MazeRunner;
 import PolymorphismExample.Movie;
+import Arrays.Arrays;
 
 public class WholeNumbers {
     public static void main(String[] args) {
@@ -92,6 +93,10 @@ public class WholeNumbers {
         }
         //Testing static
         TestingStatic.Run();
+        //Arrays
+        Arrays array = new Arrays();
+        array.Run();
+        array.Run(6);
     }
     //Polymorphism Example
     public static Movie randomMovie() {
