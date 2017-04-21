@@ -42,6 +42,13 @@ public class Customer {
                 arrayList) {
             System.out.println(arrayListItem);
         }
+
+        arrayList.add(1, 4);
+
+        for (int updateArrayListItem :
+                arrayList) {
+            System.out.println(updateArrayListItem);
+        }
     }
     
 
