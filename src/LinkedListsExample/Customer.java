@@ -43,7 +43,7 @@ public class Customer {
             System.out.println(arrayListItem);
         }
 
-        arrayList.add(1, 4);
+        arrayList.add(1, 4); // this is kind of costly, because the items need to be moved around.
 
         for (int updateArrayListItem :
                 arrayList) {

@@ -3,6 +3,7 @@ import CompositionExample.*;
 import EncapsulationExample.EncapsulatedPlayer;
 import EncapsulationExample.Player;
 import LinkedListsExample.Customer;
+import LinkedListsExample.LinkedListExample;
 import PolymorphismExample.IndependenceDay;
 import PolymorphismExample.Jaws;
 import PolymorphismExample.MazeRunner;
@@ -107,6 +108,9 @@ public class WholeNumbers {
         System.out.println("Balance for customer " + customer.getName() + " is " + customer.getBalance());
 
         customer.ManipulateArrayList();
+
+        LinkedListExample linkedListExample = new LinkedListExample();
+        linkedListExample.Run();
 
     }
     //Polymorphism Example
