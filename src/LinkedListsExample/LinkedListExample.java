@@ -10,13 +10,21 @@ import java.util.ListIterator;
 public class LinkedListExample {
     public void Run() {
         LinkedList<String> placesInAustralia = new LinkedList<>();
-        placesInAustralia.add("Sydney");
-        placesInAustralia.add("Melbourne");
-        placesInAustralia.add("Alice Springs");
-        placesInAustralia.add("Perth");
-        placesInAustralia.add("Tasmania");
-        placesInAustralia.add("Outback");
-        placesInAustralia.add("Auckland");
+//        placesInAustralia.add("Sydney");
+//        placesInAustralia.add("Melbourne");
+//        placesInAustralia.add("Alice Springs");
+//        placesInAustralia.add("Perth");
+//        placesInAustralia.add("Tasmania");
+//        placesInAustralia.add("Outback");
+//        placesInAustralia.add("Auckland");
+        addInOrder(placesInAustralia, "Sydney");
+        addInOrder(placesInAustralia, "Melbourne");
+        addInOrder(placesInAustralia, "Alice Springs");
+        addInOrder(placesInAustralia, "Perth");
+        addInOrder(placesInAustralia, "Tasmania");
+        addInOrder(placesInAustralia, "Outback");
+        addInOrder(placesInAustralia, "Auckland");
+        addInOrder(placesInAustralia, "Auckland"); // Will have a warning that it has already been added.
         printList(placesInAustralia);
 
         placesInAustralia.add("Europea");
@@ -24,6 +32,8 @@ public class LinkedListExample {
 
         placesInAustralia.remove(3);
         printList(placesInAustralia);
+
+        visit(placesInAustralia);
     }
 
     private static void printList(LinkedList<String> stringList) {
@@ -55,5 +65,19 @@ public class LinkedListExample {
         //we went through the whole list, so we need to add it to the end
         stringListIterator.add(newCity);
         return true;
+    }
+
+    private static void visit(LinkedList<String> cities) {
+        ListIterator<String> cityIterator = cities.listIterator();
+
+        if (cities.isEmpty()) {
+            System.out.println("No cities in the itinerary");
+            return;
+        } else {
+            while (cityIterator.hasNext()) {
+                System.out.println("Now visiting using visit function " + cityIterator.next());
+
+            }
+        }
     }
 }
