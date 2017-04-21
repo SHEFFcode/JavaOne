@@ -2,6 +2,7 @@ import Arrays.Arrays;
 import CompositionExample.*;
 import EncapsulationExample.EncapsulatedPlayer;
 import EncapsulationExample.Player;
+import LinkedListsExample.Customer;
 import PolymorphismExample.IndependenceDay;
 import PolymorphismExample.Jaws;
 import PolymorphismExample.MazeRunner;
@@ -98,6 +99,14 @@ public class WholeNumbers {
         array.Run();
         array.Run(6);
         System.out.println(array.Average(new int[] {1, 2, 3, 4}));
+
+        //Linked Lists
+        Customer customer = new Customer("John", 300);
+        Customer anotherCustomer = customer;
+        anotherCustomer.setBalance(20);
+        System.out.println("Balance for customer " + customer.getName() + " is " + customer.getBalance());
+
+        customer.ManipulateArrayList();
 
     }
     //Polymorphism Example
